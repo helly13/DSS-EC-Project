@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/th"
+    tools:context=".ListOrder">
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="422dp"
+        android:padding="4dp"
+        tools:ignore="MissingConstraints">
+        <!--  tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="249dp">-->
+
+        <!--  android:textSize="16sp"-->
+
+        <TextView
+            android:id="@+id/etextorderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="25dp"
+            android:text="Order id:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textorderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="25dp"
+            android:text="Order id"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etextitemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="65dp"
+            android:text="Item name:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textitemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textorderid"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="13dp"
+            android:text="item name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <TextView
+            android:id="@+id/etotalqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="108dp"
+            android:text="Quantity:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/texttotalqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textitemname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="9dp"
+            android:text="Qty"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/etableno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="153dp"
+            android:text="Table No:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/texttable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttotalqty"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="14dp"
+            android:text="Table no"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="111dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="242dp"
+            android:layout_marginRight="289dp"
+            android:background="#99CC"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="Accept"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btnAccept"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-58dp"
+            android:layout_marginRight="152dp"
+            android:background="#99CC"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="Reject"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

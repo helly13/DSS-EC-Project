@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bg6"
+    tools:context=".AddMenuActivity">
+
+
+    <EditText
+        android:id="@+id/edt_categoryid"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Category id"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_catname"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Category name"
+        android:includeFontPadding="true"
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_categoryid" />
+
+    <EditText
+        android:id="@+id/edt_itemname"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Item name"
+
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_catname" />
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Price"
+
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_itemname" />
+
+
+    <EditText
+        android:id="@+id/edt_status"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Status"
+
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_price" />
+
+
+    <EditText
+        android:id="@+id/edt_type"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Type"
+        android:padding="14dp"
+        android:textColor="@color/space_white"
+        android:textColorHint="@color/space_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_status" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="116dp"
+        android:layout_height="92dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choosebn" />
+
+
+    <Button
+        android:id="@+id/btn_choosebn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28.2dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_bg"
+        android:text="Choose Image"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_type" />
+
+
+    <Button
+        android:id="@+id/btn_uploadbn"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_bg"
+        android:text="Upload image"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_choosebn"
+        app:layout_constraintTop_toBottomOf="@+id/edt_type" />
+
+    <Button
+        android:id="@+id/btn_addbn"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/add_bg"
+        android:text="Add Item"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/btn_uploadbn" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
